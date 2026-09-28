@@ -17,11 +17,10 @@ function App(){
 
           <Navbar/>
           <Sidbar/>
-          <StudentCards 
-          title={title}
-            number={number}
-          />
-
+         <StudentCards 
+  title="Students"
+  number="120"
+/>
          <Routes>
             <Route>
               <Route path='/' element={<Dashboard/>}/>
