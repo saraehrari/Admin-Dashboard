@@ -1,8 +1,12 @@
-export default function Dashboard (){
+export default function Dashboard(){
     return(
-        <div>
-            <h1>Dashboard</h1>
-            <p>This is the Dashboard Page.</p>
-        </div>
+        <div className="row g-3">
+  <StatCard title="Students" number="120" />
+  <StatCard title="Courses" number="18" />
+  <StatCard title="Teachers" number="12" />
+  <StatCard title="Pending" number="8" />
+</div>
     )
 }
+
+

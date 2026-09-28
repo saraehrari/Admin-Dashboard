@@ -18,6 +18,8 @@ function App(){
           <Navbar/>
           <Sidbar/>
           <StudentCards 
+          title={title}
+            number={number}
           />
 
          <Routes>
