@@ -4,7 +4,7 @@ import Courses from './Pages/Courses';
 import Profile from './Pages/Profile'
 import Navbar from './Components/Navbar';
 import Sidbar from './Components/Sidbar';
-import StudentCards from './Components/StudentCards';
+
 
 
 function App(){
@@ -17,17 +17,9 @@ function App(){
 
           <Navbar/>
           <Sidbar/>
-         <StudentCards 
-  
-/>
          <Routes>
             <Route>
-              <Route path='/' element={<Dashboard/>}
-              
-              title="Students"
-              number="120"
-
-              />
+              <Route path='/' element={<Dashboard/>}/>
               <Route path='/courses' element={<Courses/>}/>
               <Route path='/profile' element={<Profile/>}/>
             </Route>
