@@ -18,12 +18,16 @@ function App(){
           <Navbar/>
           <Sidbar/>
          <StudentCards 
-  title="Students"
-  number="120"
+  
 />
          <Routes>
             <Route>
-              <Route path='/' element={<Dashboard/>}/>
+              <Route path='/' element={<Dashboard/>}
+              
+              title="Students"
+              number="120"
+
+              />
               <Route path='/courses' element={<Courses/>}/>
               <Route path='/profile' element={<Profile/>}/>
             </Route>
