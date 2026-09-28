@@ -1,5 +1,5 @@
-export default function StudentCards(){
+export default function StudentCards({title, number}){
     return(
-        <h1>Student Cards</h1>
+        
     )
 }

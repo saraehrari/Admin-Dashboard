@@ -17,7 +17,8 @@ function App(){
 
           <Navbar/>
           <Sidbar/>
-          <StudentCards/>
+          <StudentCards 
+          />
 
          <Routes>
             <Route>
