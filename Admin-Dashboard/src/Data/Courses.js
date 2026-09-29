@@ -2,6 +2,7 @@ const Courses = [
   {
     id: 1,
     title: "React for Beginners",
+    description: "Learn the basics of React.",
     instructor: "Sarah Johnson",
     category: "Web Development",
     level: "Beginner",
@@ -13,6 +14,7 @@ const Courses = [
   {
     id: 2,
     title: "JavaScript Fundamentals",
+    description: "Learn JavaScript fundamentals.",
     instructor: "Michael Brown",
     category: "Programming",
     level: "Beginner",
@@ -21,9 +23,11 @@ const Courses = [
     lessons: 20,
     status: "Active",
   },
-  {
+
+    {
     id: 3,
     title: "Advanced React",
+    description: "Learn advanced React concepts, hooks, routing, and state management.",
     instructor: "David Wilson",
     category: "Web Development",
     level: "Advanced",
@@ -35,6 +39,7 @@ const Courses = [
   {
     id: 4,
     title: "UI/UX Design Basics",
+    description: "Learn the fundamentals of creating beautiful and user-friendly interfaces.",
     instructor: "Emily Davis",
     category: "Design",
     level: "Beginner",
@@ -46,17 +51,19 @@ const Courses = [
   {
     id: 5,
     title: "HTML & CSS Masterclass",
+    description: "Build responsive websites using HTML and modern CSS techniques.",
     instructor: "James Anderson",
     category: "Web Development",
     level: "Beginner",
-    duration: "4 Weeks",
+    duration: "5 Weeks",
     students: 150,
-    lessons: 22,
+    lessons: 25,
     status: "Active",
   },
   {
     id: 6,
-    title: "Node.js & Express",
+    title: "Node.js and Express",
+    description: "Learn backend development and build APIs with Node.js and Express.",
     instructor: "Daniel Miller",
     category: "Backend Development",
     level: "Intermediate",
