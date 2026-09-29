@@ -1,3 +1,5 @@
+import { useParams } from "react-router-dom";
+
 export default function CoursesDetails(){
     const [id] = useParams();
     const course = CoursesData.find((p) => p.id === id);

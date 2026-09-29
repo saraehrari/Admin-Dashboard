@@ -2,8 +2,9 @@ import { useNavigate } from "react-router-dom";
 
 export default function Courses({ courses }) {
     const navigate= useNavigate()
-     navigate(`/Courses/${Courses.id}`)}
+    
   return (
+    
     <div className="container-fluid py-4">
       
       {/* Header */}
@@ -95,7 +96,7 @@ export default function Courses({ courses }) {
                 </div>
 
                 {/* Button */}
-                <button
+                <button  onClick={() => navigate(`/courses/${course.id}`)}
                  className="btn btn-primary w-100 mt-4">
                   View Course
                 </button>
@@ -108,3 +109,4 @@ export default function Courses({ courses }) {
       </div>
     </div>
   );
+}
