@@ -8,6 +8,7 @@ export default function Sidebar() {
         width: "220px",
         height: "400px",
         flexShrink:0,
+      
       }}
     >
       <h4 className="text-white mb-4">Dashboard</h4>
