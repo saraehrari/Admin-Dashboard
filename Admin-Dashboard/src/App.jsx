@@ -1,36 +1,36 @@
-import {Routes , Route} from 'react-router-dom';
-import Dashboard from './Pages/Dashboard';
-import Courses from './Pages/Courses';
-import Profile from './Pages/Profile'
-import Navbar from './Components/Navbar';
-import Sidbar from './Components/Sidbar';
+import { Routes, Route } from "react-router-dom";
 
+import Dashboard from "./Pages/Dashboard";
+import Courses from "./Pages/Courses";
+import CoursesData from "./Data/Courses";
+import Profile from "./Pages/Profile";
+import Navbar from "./Components/Navbar";
+import Sidbar from "./Components/Sidbar";
+import CoursesDetails from "./Pages/CoursesDetails";
 
+function App() {
+  return (
+    <div>
+      <Navbar />
+      <Sidbar />
 
-function App(){
+      <Routes>
+        <Route path="/" element={<Dashboard />} />
 
+        <Route
+          path="/courses"
+          element={<Courses courses={CoursesData} />}
+        />
 
-    return(
-  
+        <Route
+  path="/courses/:id"
+  element={<CoursesDetails />}
+/>
 
-        <div>
-
-          <Navbar/>
-          <Sidbar/>
-         <Routes>
-            <Route>
-              <Route path='/' element={<Dashboard/>}/>
-              <Route path='/courses' element={<Courses
-                Courses={Courses}
-              />}/>
-              <Route path='/profile' element={<Profile/>}/>
-            </Route>
-         </Routes>
-
-
-        </div>
-
-    )
+        <Route path="/profile" element={<Profile />} />
+      </Routes>
+    </div>
+  );
 }
 
 export default App;
