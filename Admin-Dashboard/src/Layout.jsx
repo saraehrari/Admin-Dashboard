@@ -6,7 +6,7 @@ export default function Layout() {
       <div className="d-flex">
         <Sidebar />
 
-        <main className="main-content">
+        <main className="flex-grow-1">
           <Dashboard />
         </main>
       </div>
