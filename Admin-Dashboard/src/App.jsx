@@ -23,7 +23,7 @@ function App() {
         />
 
         <Route
-  path="/courses/:id"
+  path="/Courses/:id"
   element={<CoursesDetails />}
 />
 
