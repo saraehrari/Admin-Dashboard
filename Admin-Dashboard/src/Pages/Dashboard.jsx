@@ -2,9 +2,9 @@ import Students from "../Data/Students";
 
 export default function Dashboard() {
   return (
-    <div className="container-fluid py-4 px-4">
+    <div className="container py-4">
 
-      <div className="text-center mb-4">
+      <div className="text-center mb-3">
         <h1 className="fw-bold">Students Dashboard</h1>
         <p className="text-muted">
           Manage and view all registered students.
@@ -19,7 +19,7 @@ export default function Dashboard() {
 
                 <div className="d-flex align-items-center mb-3">
                   <div
-                    className="bg-primary text-white rounded-circle 
+                    className="bg-primary text-white rounded-circle
                     d-flex align-items-center justify-content-center me-3"
                     style={{
                       width: "55px",

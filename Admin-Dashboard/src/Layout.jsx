@@ -1,16 +1,15 @@
-export default function Layout(){
-    return(
-      <div>
-  <Header />
+export default function Layout() {
+  return (
+    <div>
+      <Header />
 
-  <div className="d-flex">
-    <Sidebar />
+      <div className="d-flex">
+        <Sidebar />
 
-    <main className="flex-grow-1">
-      <Dashboard />
-    </main>
-  </div>
-</div>
-    )};
-
-
+        <main className="main-content">
+          <Dashboard />
+        </main>
+      </div>
+    </div>
+  );
+}

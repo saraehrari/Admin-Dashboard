@@ -25,7 +25,21 @@
     id: 4,
     name: "Maryam Noor",
     age: 23,
-    course: "React",
+    course: "Java",
+    status: "Active",
+  },
+  {
+    id: 5,
+    name: "Ali Ataee",
+    age: 19,
+    course: "UX UI Design",
+    status: "Pending",
+  },
+  {
+    id: 6,
+    name: "Zahra Khan",
+    age: 20,
+    course: "Web Design",
     status: "Active",
   },
 ];
