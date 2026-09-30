@@ -4,10 +4,15 @@ import Courses from "../Data/Courses";
 export default function CoursesData() {
   const { id } = useParams();
 
+
   const course = Courses.find((p) => p.id == id);
 
   if (!course) {
     return <h2 className="text-center mt-5">Course not found</h2>;
+  }
+
+  const enrollNow =()=>{
+    alert(`You have secssfully enrolled in the course: ${course.title}`)
   }
 
   return (
@@ -80,11 +85,11 @@ export default function CoursesData() {
 
           </div>
 
-          <button className="btn btn-primary mt-5 px-4">
+          <button onClick={enrollNow} className="btn btn-primary mt-5 px-4">
             Enroll Now
           </button>
 
-          <button className="btn btn-outline-primary mt-5 px-4 ">
+          <button onClick={() => window.history.back()} className="btn btn-outline-primary mt-5 px-4 ms-3">
             Back
           </button>
 
