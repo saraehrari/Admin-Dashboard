@@ -6,7 +6,7 @@ import CoursesData from "./Data/Courses";
 import Profile from "./Pages/Profile";
 import Navbar from "./Components/Navbar";
 import Sidbar from "./Components/Sidbar";
-import CoursesDetails from "./Pages/CoursesDetails";
+import CoursesDetails from "./Pages/CoursesDetalis";
 
 function App() {
   return (

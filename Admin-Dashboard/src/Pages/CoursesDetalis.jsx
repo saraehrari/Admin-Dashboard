@@ -1,9 +1,12 @@
 import { useParams } from "react-router-dom";
+import Courses from "../Data/Courses";
 
-export default function CoursesDetails(){
-    const [id] = useParams();
-    const course = CoursesDetails.find((p) => p.id === id);
-    if (!course) {
+export default function CoursesData() {
+  const { id } = useParams();
+
+  const course = Courses.find((p) => p.id == id);
+
+  if (!course) {
     return <h2 className="text-center mt-5">Course not found</h2>;
   }
 
@@ -12,9 +15,7 @@ export default function CoursesDetails(){
       <div className="card border-0 shadow rounded-4">
         <div className="card-body p-5">
 
-          {/* Category & Status */}
           <div className="d-flex justify-content-between align-items-center mb-4">
-
             <span className="badge bg-primary-subtle text-primary px-3 py-2">
               {course.category}
             </span>
@@ -28,22 +29,18 @@ export default function CoursesDetails(){
             >
               {course.status}
             </span>
-
           </div>
 
-          {/* Title */}
           <h1 className="fw-bold mb-3">
             {course.title}
           </h1>
 
-          {/* Description */}
           <p className="text-muted fs-5 mb-4">
             {course.description}
           </p>
 
           <hr />
 
-          {/* Course Information */}
           <div className="row g-4 mt-2">
 
             <div className="col-md-6">
@@ -85,6 +82,10 @@ export default function CoursesDetails(){
 
           <button className="btn btn-primary mt-5 px-4">
             Enroll Now
+          </button>
+
+          <button className="btn btn-outline-primary mt-5 px-4 ">
+            Back
           </button>
 
         </div>
