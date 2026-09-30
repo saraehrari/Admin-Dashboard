@@ -2,7 +2,7 @@ import { useParams } from "react-router-dom";
 
 export default function CoursesDetails(){
     const [id] = useParams();
-    const course = CoursesData.find((p) => p.id === id);
+    const course = CoursesDetails.find((p) => p.id === id);
     if (!course) {
     return <h2 className="text-center mt-5">Course not found</h2>;
   }
