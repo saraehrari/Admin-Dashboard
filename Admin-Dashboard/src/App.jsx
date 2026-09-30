@@ -29,6 +29,26 @@ function App() {
 
         <Route path="/profile" element={<Profile />} />
       </Routes>
+
+
+
+      <Profile>
+        <h1>Sara Ehrari</h1>
+        <p>Software Engineer</p>
+        <p>sara.ehrari@gmail.com</p>
+      </Profile>
+
+
+
+
+
+
+
+
+
+
+
+
     </div>
   );
 }

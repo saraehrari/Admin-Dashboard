@@ -1,8 +1,7 @@
-export default function Profile(){
+export default function Profile({children}){
     return(
-        <div>
-            <h1>Profile</h1>
-            <p>This is the Profile Page.</p>
-        </div>
+       <div>
+        {children}
+       </div>
     )
 }
