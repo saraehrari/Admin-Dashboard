@@ -22,26 +22,47 @@
     status: "Pending",
   },
   {
-    id: 4,
-    name: "Maryam Noor",
-    age: 23,
-    course: "Java",
+   id: 4,
+    name: "Maya Hassan",
+    age: 29,
+    course: "UX UI Design",
     status: "Active",
   },
   {
     id: 5,
-    name: "Ali Ataee",
-    age: 19,
-    course: "UX UI Design",
-    status: "Pending",
+    name: "Ariana Ahmad",
+    age: 24,
+    course: "Java",
+    status: "Active",
   },
   {
     id: 6,
-    name: "Zahra Khan",
+    name: "Farid Ahmad",
     age: 20,
     course: "Web Design",
+    status: "Pending",
+  },
+  {
+   id: 7,
+    name: "Zahra Mirza",
+    age: 22,
+    course: "Flutter",
     status: "Active",
   },
-];
-
+  {
+    id: 8,
+    name: "Ahmad Khan",
+    age: 27,
+    course: "UX UI Design",
+    status: "Active",
+  },
+  {
+    id: 9,
+    name: "Laila Rahimi",
+    age: 19,
+    course: "Flutter",
+    status: "Pending",
+  },
+  
+]
 export default Students;

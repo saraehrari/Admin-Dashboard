@@ -2,15 +2,11 @@ import { NavLink } from "react-router-dom";
 
 export default function Sidebar() {
   return (
-    <nav
-      className="bg-dark p-3"
-      style={{
-        width: "220px",
-        height: "400px",
-        flexShrink:0,
+    
+     <nav className="sidebar">
       
-      }}
-    >
+      
+    
       <h4 className="text-white mb-4">Dashboard</h4>
 
       <NavLink

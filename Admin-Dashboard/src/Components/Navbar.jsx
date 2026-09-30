@@ -2,7 +2,7 @@
 
 export default function Navbar() {
   return (
-    <nav className="navbar bg-white border-bottom px-4 py-3">
+    <nav className="navbar navbar-expand-lg navbar-light bg-light shadow-sm p-3 mb-4 rounded-4">
       <div className="container-fluid">
         <h4 className="mb-0">Dashboard</h4>
 
