@@ -33,7 +33,8 @@ function App() {
 
 
       <Profile>
-        <h1>Sara Ehrari</h1>
+        <h1>Personal Information</h1>
+        <h2>Sara Ehrari</h2>
         <p>Software Engineer</p>
         <p>sara.ehrari@gmail.com</p>
       </Profile>
