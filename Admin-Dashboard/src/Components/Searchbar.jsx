@@ -1,40 +1,28 @@
 import { useState } from "react";
-import Students from "../Data/Students";
-export default function Searchbar() {
+
+export default function Searchbar({ onSearch }) {
   const [searchItem, setSearchItem] = useState("");
-  const filteredStudents = Students.filter((student) =>
-    student.name.toLowerCase().includes(searchItem.toLowerCase())
-  );
 
-
-  const handleSearch =()=>{
+  function handleSearch() {
+    onSearch(searchItem);
     setSearchItem('')
   }
 
-  if(!filteredStudents.length && searchItem){
-    alert("Student not found");
-  }
+ 
+
   return (
-    <div>
-        {searchItem && 
-          filteredStudents.map((student) => (
-            <div key={student.id}>
-              <p>{student.name}</p>
-            </div>
-          ))
-        }
+    <div className="d-flex gap-2 mb-4">
       <input
         type="text"
-        placeholder="Search Students..."
+        className="form-control"
+        placeholder="Search student..."
         value={searchItem}
         onChange={(e) => setSearchItem(e.target.value)}
-       
       />
 
-      
-      <button onClick={handleSearch}>Search</button>
-
-     
+      <button className="btn btn-primary" onClick={handleSearch}>
+        Search
+      </button>
     </div>
   );
 }

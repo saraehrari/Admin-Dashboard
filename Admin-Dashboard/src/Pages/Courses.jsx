@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 export default function Courses({ courses }) {
     const navigate= useNavigate()
     
+    
   return (
     
     <div className="container-fluid py-4">
