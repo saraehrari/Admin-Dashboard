@@ -6,7 +6,8 @@ export default function Dashboard() {
   const [search, setSearch] = useState("");
 
   const filteredStudents = Students.filter((student) =>
-    student.name.toLowerCase().includes(search.toLowerCase())
+    student.name.toLowerCase().includes(search.toLowerCase())|| 
+  student.course.toLowerCase().includes(search.toLowerCase())
   );
 
   return (
@@ -21,8 +22,12 @@ export default function Dashboard() {
               <p>{student.course}</p>
             </div>
           </div>
+          
         ))}
       </div>
+    
+            
+  
     </div>
   );
 }
