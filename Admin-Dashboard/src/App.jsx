@@ -9,13 +9,20 @@ import Navbar from "./Components/Navbar";
 import Sidebar from "./Components/Sidbar";
 import CoursesDetails from "./Pages/CoursesDetalis";
 import "./App.css";
+import Searchbar from "./Components/Searchbar";
 
 
 function App() {
+
   return (
     <div className="app">
 
-      <Navbar />
+      <Navbar> 
+     <Searchbar/>
+      </Navbar>
+  
+      
+      
 
       <Sidebar />
 
