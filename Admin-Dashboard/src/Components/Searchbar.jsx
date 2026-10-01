@@ -10,13 +10,19 @@ export default function Searchbar() {
   const handleSearch =()=>{
     setSearchItem('')
   }
+
+  if(!filteredStudents.length && searchItem){
+    alert("Student not found");
+  }
   return (
     <div>
-        {filteredStudents.map((student) => (
-          <div key={student.id}>
-            <p>{student.name}</p>
-          </div>
-          ))}
+        {searchItem && 
+          filteredStudents.map((student) => (
+            <div key={student.id}>
+              <p>{student.name}</p>
+            </div>
+          ))
+        }
       <input
         type="text"
         placeholder="Search Students..."
