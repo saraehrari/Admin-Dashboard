@@ -27,7 +27,7 @@ export default function Dashboard() {
                           ? "bg-success-subtle text-success"
                           : "bg-warning-subtle text-warning"
                       }`}
-                    ></span>
+                    >{student.status}</span>
               <p>ID #{student.id}</p>
             </div>
           </div>

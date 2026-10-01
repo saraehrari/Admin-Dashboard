@@ -33,7 +33,7 @@
     name: "Ariana Ahmad",
     age: 24,
     course: "Java",
-    status: "Active",
+    status: "Pending",
   },
   {
     id: 6,
@@ -69,7 +69,7 @@ id: 10,
     name: "Zahra Mirza",
     age: 25,
     course: "Web Design",
-    status: "Draft",
+    status: "Active",
   },
 
   {
@@ -91,7 +91,7 @@ id: 10,
     name: "Zahra Mirza",
     age: 20,
     course: "WordPress",
-    status: "Draft",
+    status: "Pending",
   },
   {
     id: 14,
