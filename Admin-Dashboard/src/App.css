@@ -4,13 +4,13 @@
 
 body {
   margin: 0;
-  background-color: #f8fafc;
-  color: #0f172a;
+
   font-family: "Inter", Arial, sans-serif;
 }
 
 * {
   box-sizing: border-box;
+  
 }
 
 a {
@@ -116,10 +116,9 @@ a {
 
 .main-content {
   
-
+background-color: #EEEEEE;
   min-height: 100vh;
 
-  background-color: ;
 }
 
 
