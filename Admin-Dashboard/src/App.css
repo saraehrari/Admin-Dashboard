@@ -47,7 +47,7 @@ a {
 }
 
 .navbar i:hover {
-  color: #2563eb;
+  color: #F78D60;
 }
 
 
@@ -104,7 +104,7 @@ a {
 }
 
 .sidebar a.active {
-  background-color: #F78D60;
+  background-color:#F25912;
   color: #ffffff;
 
   box-shadow: 0 5px 15px rgba(37, 99, 235, 0.25);
@@ -187,7 +187,7 @@ background-color: #F8FAFC;
 
 .btn-primary {
   background-color: #F25912 !important;
-  border-color:  !important;
+  border-color:  #F78D60!important;
 
   border-radius: 9px;
 
@@ -197,7 +197,7 @@ background-color: #F8FAFC;
 }
 
 .btn-primary:hover {
-  background-color:
+  background-color:#F78D60;
 
   transform: translateY(-1px);
 }
@@ -227,7 +227,7 @@ background-color: #F8FAFC;
   width: 90px;
   height: 90px;
 
-  background-color: #2563eb;
+  background-color: #F78D60;
 
   color: white;
 
@@ -244,7 +244,7 @@ background-color: #F8FAFC;
 }
 
 .profile-info {
-  background-color: #f8fafc;
+  background-color: #F78D60;
 
   border: 1px solid #e2e8f0;
 
@@ -257,7 +257,7 @@ background-color: #F8FAFC;
 
 .profile-info:hover {
   border-color: #bfdbfe;
-  background-color: #eff6ff;
+  background-color: #F78D60;
 }
 
 
