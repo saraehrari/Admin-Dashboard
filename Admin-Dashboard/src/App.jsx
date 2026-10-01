@@ -8,8 +8,8 @@ import Profile from "./Pages/Profile";
 import Navbar from "./Components/Navbar";
 import Sidebar from "./Components/Sidbar";
 import CoursesDetails from "./Pages/CoursesDetalis";
-
 import "./App.css";
+
 
 function App() {
   return (
@@ -19,6 +19,7 @@ function App() {
 
       <Sidebar />
 
+    
       <main className="main-content">
         <Routes>
 
