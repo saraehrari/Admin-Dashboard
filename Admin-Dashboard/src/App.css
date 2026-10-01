@@ -64,8 +64,7 @@ a {
 
   width: 198px;
  height:900px;
-  background-color: #0f172a;
-
+  background-color: black;
   padding: 25px 15px;
 
   z-index: 999;
@@ -95,15 +94,17 @@ a {
   font-weight: 500;
 
   transition: all 0.2s ease;
+
+  background-color: #F25912;
 }
 
 .sidebar a:hover {
-  background-color: #1e293b;
+  background-color: #F68048;
   color: #ffffff;
 }
 
 .sidebar a.active {
-  background-color: #2563eb;
+  background-color: #F78D60;
   color: #ffffff;
 
   box-shadow: 0 5px 15px rgba(37, 99, 235, 0.25);
@@ -116,7 +117,7 @@ a {
 
 .main-content {
   
-background-color: #EEEEEE;
+background-color: #F8FAFC;
   min-height: 100vh;
 
 }
@@ -131,7 +132,7 @@ background-color: #EEEEEE;
 }
 
 .main-content .text-muted {
-  color: #64748b !important;
+  color: #1F2937!important;
 }
 
 
@@ -185,8 +186,8 @@ background-color: #EEEEEE;
 ========================= */
 
 .btn-primary {
-  background-color: #2563eb !important;
-  border-color: #2563eb !important;
+  background-color: #F25912 !important;
+  border-color:  !important;
 
   border-radius: 9px;
 
@@ -196,8 +197,7 @@ background-color: #EEEEEE;
 }
 
 .btn-primary:hover {
-  background-color: #1d4ed8 !important;
-  border-color: #1d4ed8 !important;
+  background-color:
 
   transform: translateY(-1px);
 }
@@ -215,6 +215,7 @@ background-color: #EEEEEE;
 .badge {
   border-radius: 8px;
   font-weight: 500;
+  border: 1px solid #E5E7EB;
 }
 
 
