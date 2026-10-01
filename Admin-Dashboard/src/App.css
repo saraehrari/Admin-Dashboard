@@ -117,8 +117,11 @@ a {
 
 .main-content {
   
-background-color: #FFF7EB;
- main-height: 100vh;
+background-color: #FCF8F8;
+ min-height: 100vh;
+margin-bottom:20px;
+
+  transition: all 0.2s ease;
 }
 
 

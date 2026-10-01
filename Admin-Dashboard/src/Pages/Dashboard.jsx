@@ -19,7 +19,16 @@ export default function Dashboard() {
           <div className="col-md-6 col-lg-4" key={student.id}>
             <div className="card shadow-sm p-3">
               <h5>{student.name}</h5>
-              <p>{student.course}</p>
+              <p> Course: {student.course}</p>
+               <p>Age: {student.age}</p>
+              <span
+                      className={`badge px-3 py-2 ${
+                        student.status === "Active"
+                          ? "bg-success-subtle text-success"
+                          : "bg-warning-subtle text-warning"
+                      }`}
+                    ></span>
+              <p>ID #{student.id}</p>
             </div>
           </div>
           

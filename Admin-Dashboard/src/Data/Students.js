@@ -64,5 +64,50 @@
     status: "Pending",
   },
   
+{
+id: 10,
+    name: "Zahra Mirza",
+    age: 25,
+    course: "Web Design",
+    status: "Draft",
+  },
+
+  {
+    id: 11,
+    name: "Ahmad Khan",
+    age: 22,
+    course: "UX UI Design",
+    status: "Active",
+  },
+  {
+    id: 12,
+    name: "Laila Rahimi",
+    age: 19,
+    course: "Java",
+    status: "Pending",
+  },
+  {
+    id: 13,
+    name: "Zahra Mirza",
+    age: 20,
+    course: "WordPress",
+    status: "Draft",
+  },
+  {
+    id: 14,
+    name: "Ahmad Khan",
+    age: 21,
+    course: "UX UI Design",
+    status: "Active",
+  },
+  {
+    id: 15,
+    name: "Laila Rahimi",
+    age: 19,
+    course: "Java",
+    status: "Pending",
+  },
+
+
 ]
 export default Students;
