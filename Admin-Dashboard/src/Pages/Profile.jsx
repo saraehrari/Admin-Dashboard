@@ -17,7 +17,7 @@ export default function Profile() {
                 </div>
 
                 <h1 className="fw-bold mb-1">Sara Ehrari</h1>
-                <p className="text-primary fw-semibold mb-0">
+                <p className="text-primary fw-semibold mb-0" style={{ color:"#F78D60" }}>
                   Software Engineer
                 </p>
               </div>

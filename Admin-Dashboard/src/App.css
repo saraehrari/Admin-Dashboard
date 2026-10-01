@@ -47,7 +47,7 @@ a {
 }
 
 .navbar i:hover {
-  color: #F78D60;
+  color:#2845D6;
 }
 
 
@@ -95,11 +95,11 @@ a {
 
   transition: all 0.2s ease;
 
-  background-color: #F25912;
+  background-color: blue;
 }
 
 .sidebar a:hover {
-  background-color: #F68048;
+  background-color: #2845D6;
   color: #ffffff;
 }
 
@@ -117,9 +117,8 @@ a {
 
 .main-content {
   
-background-color: #F8FAFC;
-  min-height: 100vh;
-
+background-color: #FFF7EB;
+ main-height: 100vh;
 }
 
 
@@ -186,8 +185,8 @@ background-color: #F8FAFC;
 ========================= */
 
 .btn-primary {
-  background-color: #F25912 !important;
-  border-color:  #F78D60!important;
+  background-color: #2845D6!important;
+  border-color:  #2845D6!important;
 
   border-radius: 9px;
 
@@ -227,7 +226,7 @@ background-color: #F8FAFC;
   width: 90px;
   height: 90px;
 
-  background-color: #F78D60;
+  background-color: #6083f7;
 
   color: white;
 
