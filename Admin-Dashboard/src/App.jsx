@@ -10,6 +10,8 @@ import Sidebar from "./Components/Sidbar";
 import CoursesDetails from "./Pages/CoursesDetalis";
 import "./App.css";
 import Searchbar from "./Components/Searchbar";
+import Aboutus from "./Pages/Aboutus";
+import SignOut from "./Pages/SignOut";
 
 
 function App() {
@@ -48,6 +50,17 @@ function App() {
           <Route
             path="/profile"
             element={<Profile />}
+          />
+
+
+          <Route
+            path="/aboutus"
+            element={<Aboutus />}
+          />
+
+          <Route
+            path="/signout"
+            element={<SignOut />}
           />
 
         </Routes>
