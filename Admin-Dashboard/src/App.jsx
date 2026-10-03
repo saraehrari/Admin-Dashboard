@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router-dom";
-
+import Image from "./assets/360_F_539654005_M7XZRGAG3TAarymgapSSgSUdgkNKQL2g.jpg";
 import Dashboard from "./Pages/Dashboard";
 import Courses from "./Pages/Courses";
 import CoursesData from "./Data/Courses";
@@ -65,6 +65,18 @@ function App() {
 
         </Routes>
       </main>
+
+
+       <div>
+       <Aboutus className="about-page"
+        image={Image}
+        title="About Us" 
+        description="Welcome to our Admin Dashboard, a simple and modern platform designed to make managing students, courses, teachers, and other important information easier. Our goal is to provide a clean, organized, and user-friendly experience that helps administrators manage their daily tasks efficiently."
+ 
+      />
+</div>
+
+
 
     </div>
   );

@@ -1,8 +1,9 @@
-export default function Aboutus(){
+export default function Aboutus({image, title, description}) {
     return(
         <div>
-            <h1>About Us</h1>
-            <p>This is the About Us page of the Admin Dashboard.</p>
+            <img src={image} alt={title} />
+            <h1>{title}</h1>
+            <p>{description}</p>
         </div>
     )
 }
