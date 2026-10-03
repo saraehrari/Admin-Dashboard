@@ -67,14 +67,52 @@ function App() {
       </main>
 
 
-       <div>
-       <Aboutus className="about-page"
+       <div className="about-page">
+       <Aboutus 
         image={Image}
         title="About Us" 
         description="Welcome to our Admin Dashboard, a simple and modern platform designed to make managing students, courses, teachers, and other important information easier. Our goal is to provide a clean, organized, and user-friendly experience that helps administrators manage their daily tasks efficiently."
- 
+        
+      />
+
+</div>
+
+<div>
+
+     <Aboutus
+     
+      cardTitle="Student Management"
+         cardDescription=
+         'Manage student information, profiles, and activities.'
+     />
+
+
+       <Aboutus 
+        
+         cardTitle="Course Management"
+         cardDescription=
+         'Manage course information, schedules, and enrollments.'
+      />
+
+
+
+       <Aboutus 
+        
+         cardTitle="Teacher Management"
+         cardDescription=
+         'Manage teacher information, profiles, and assignments.'
+      />
+
+
+
+       <Aboutus 
+        
+         cardTitle="Reports & Analytics"
+         cardDescription=
+         'Generate reports and analyze data for better decision-making.'
       />
 </div>
+
 
 
 

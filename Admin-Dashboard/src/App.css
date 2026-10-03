@@ -116,7 +116,17 @@ a {
 
 
 
+.about-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.about-page img {
+  width: 500px;
+  max-width: 90%;
+}
 
 
 /* =========================
