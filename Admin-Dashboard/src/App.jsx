@@ -66,57 +66,55 @@ function App() {
         </Routes>
       </main>
 
+<div className="container-fluid py-4">
 
-       <div className="about-page">
-       <Aboutus 
-        image={Image}
-        title="About Us" 
-        description="Welcome to our Admin Dashboard, a simple and modern platform designed to make managing students, courses, teachers, and other important information easier. Our goal is to provide a clean, organized, and user-friendly experience that helps administrators manage their daily tasks efficiently."
-        
+  {/* About Us */}
+  <div className="mb-5">
+    <Aboutus
+      image={Image}
+      title="About Us"
+      description="Welcome to our Admin Dashboard, a simple and modern platform designed to make managing students, courses, teachers, and other important information easier. Our goal is to provide a clean, organized, and user-friendly experience that helps administrators manage their daily tasks efficiently."
+      title2="Our Features"
+    />
+  </div>
+
+
+  {/* Feature Cards */}
+  <div className="row g-4">
+
+    <div className="col-12 col-md-6 col-lg-3">
+      <Aboutus
+        cardTitle="Attendance Tracking"
+        cardDescription="Manage student information, profiles, and activities."
       />
-
-</div>
-
-<div>
-
-     <Aboutus
-     
-      cardTitle="Student Management"
-         cardDescription=
-         'Manage student information, profiles, and activities.'
-     />
-
-
-       <Aboutus 
-        
-         cardTitle="Course Management"
-         cardDescription=
-         'Manage course information, schedules, and enrollments.'
-      />
-
-
-
-       <Aboutus 
-        
-         cardTitle="Teacher Management"
-         cardDescription=
-         'Manage teacher information, profiles, and assignments.'
-      />
-
-
-
-       <Aboutus 
-        
-         cardTitle="Reports & Analytics"
-         cardDescription=
-         'Generate reports and analyze data for better decision-making.'
-      />
-</div>
-
-
-
-
     </div>
+
+    <div className="col-12 col-md-6 col-lg-3">
+      <Aboutus
+        cardTitle="Class Scheduling"
+        cardDescription="Manage course information, schedules, and enrollments."
+      />
+    </div>
+
+    <div className="col-12 col-md-6 col-lg-3">
+      <Aboutus
+        cardTitle="Course Planning"
+        cardDescription="Manage teacher information, profiles, and assignments."
+      />
+    </div>
+
+    <div className="col-12 col-md-6 col-lg-3">
+      <Aboutus
+        cardTitle="Reports & Analytics"
+        cardDescription="Generate reports and analyze data for better decision-making."
+      />
+    </div>
+
+  </div>
+
+</div>
+
+</div>
   );
 }
 
