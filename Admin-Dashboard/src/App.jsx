@@ -1,4 +1,5 @@
 import { Routes, Route } from "react-router-dom";
+import { useState } from "react";
 
 // Pages
 import Dashboard from "./Pages/Dashboard";
@@ -23,8 +24,10 @@ import "./App.css";
 
 
 
+
 function App() {
-  const isAuth = false;
+ const [isAuth, setIsAuth] = useState(false);
+
   return (
     <div className="app">
 
@@ -84,7 +87,7 @@ function App() {
          {/* Login */}
           <Route
             path="/login"
-            element={<Login />}
+            element={<Login setIsAuth={setIsAuth} />}
           />
         </Routes>
       </main>
