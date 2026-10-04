@@ -1,3 +1,4 @@
+
 import { Routes, Route } from "react-router-dom";
 import { useState } from "react";
 
@@ -11,47 +12,34 @@ import SignOut from "./Pages/SignOut";
 import Login from "./Pages/Login";
 import ProtectedRoute from "./Pages/ProtectedRoute";
 
+// Components
+import DashboardLayout from "./Components/DashboardLayout";
+
 // Data
 import CoursesData from "./Data/Courses";
-
-// Components
-import Navbar from "./Components/Navbar";
-import Sidebar from "./Components/Sidbar";
-import Searchbar from "./Components/Searchbar";
 
 // CSS
 import "./App.css";
 
-
-
-
 function App() {
- const [isAuth, setIsAuth] = useState(false);
+  const [isAuth, setIsAuth] = useState(false);
 
   return (
-    <div className="app">
+    <Routes>
+      {/* ================= LOGIN ================= */}
+      <Route
+        path="/login"
+        element={<Login setIsAuth={setIsAuth} />}
+      />
 
-      {/* Navbar */}
-      <Navbar>
-        <Searchbar />
-      </Navbar>
+      {/* ================= PROTECTED ROUTES ================= */}
+      <Route element={<ProtectedRoute isAuth={isAuth} />}>
+        
+        {/* Dashboard Layout */}
+        <Route element={<DashboardLayout />}>
 
-      {/* Sidebar */}
-      <Sidebar />
-
-      {/* Main Content */}
-      <main className="main-content">
-        <Routes>
-
-          {/* Dashboard  , ProtectedRoute */}
-          <Route
-            path="/"
-            element={
-              <ProtectedRoute isAuth={isAuth}>
-                <Dashboard />
-              </ProtectedRoute>
-            }
-          />
+          {/* Dashboard */}
+          <Route path="/" element={<Dashboard />} />
 
           {/* Courses */}
           <Route
@@ -83,17 +71,11 @@ function App() {
             element={<SignOut />}
           />
 
-
-         {/* Login */}
-          <Route
-            path="/login"
-            element={<Login setIsAuth={setIsAuth} />}
-          />
-        </Routes>
-      </main>
-
-    </div>
+        </Route>
+      </Route>
+    </Routes>
   );
 }
 
 export default App;
+
