@@ -1,8 +1,13 @@
-export default function SignOut(){
-    return(
-        <div>
-            <h1>Sign Out</h1>
-            <p>You have been signed out.</p>
-        </div>
-    )
-}
+import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+
+export default function SignOut({ setIsAuth }) {
+    const navigate = useNavigate();
+    useEffect(() => {
+    setIsAuth(false);
+    navigate("/login");
+ }, 
+
+ [setIsAuth, navigate]);
+  return ;
+ }

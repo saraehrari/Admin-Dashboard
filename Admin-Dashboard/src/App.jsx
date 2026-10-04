@@ -66,10 +66,11 @@ function App() {
           />
 
           {/* Sign Out */}
-          <Route
-            path="/signout"
-            element={<SignOut />}
-          />
+         <Route
+         path="/signout"
+         element={<SignOut setIsAuth={setIsAuth} />}
+             
+        />
 
         </Route>
       </Route>
