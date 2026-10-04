@@ -7,6 +7,7 @@ import CoursesDetails from "./Pages/CoursesDetalis";
 import Profile from "./Pages/Profile";
 import Aboutus from "./Pages/Aboutus";
 import SignOut from "./Pages/SignOut";
+import Login from "./Pages/Login";
 
 // Data
 import CoursesData from "./Data/Courses";
@@ -18,6 +19,7 @@ import Searchbar from "./Components/Searchbar";
 
 // CSS
 import "./App.css";
+
 
 function App() {
   return (
