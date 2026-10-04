@@ -8,6 +8,7 @@ import Profile from "./Pages/Profile";
 import Aboutus from "./Pages/Aboutus";
 import SignOut from "./Pages/SignOut";
 import Login from "./Pages/Login";
+import ProtectedRoute from "./Pages/ProtectedRoute";
 
 // Data
 import CoursesData from "./Data/Courses";
@@ -21,7 +22,9 @@ import Searchbar from "./Components/Searchbar";
 import "./App.css";
 
 
+
 function App() {
+  const isAuth = false;
   return (
     <div className="app">
 
@@ -37,10 +40,14 @@ function App() {
       <main className="main-content">
         <Routes>
 
-          {/* Dashboard */}
+          {/* Dashboard  , ProtectedRoute */}
           <Route
             path="/"
-            element={<Dashboard />}
+            element={
+              <ProtectedRoute isAuth={isAuth}>
+                <Dashboard />
+              </ProtectedRoute>
+            }
           />
 
           {/* Courses */}
