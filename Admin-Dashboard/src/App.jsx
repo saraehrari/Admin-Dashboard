@@ -71,6 +71,12 @@ function App() {
             element={<SignOut />}
           />
 
+
+         {/* Login */}
+          <Route
+            path="/login"
+            element={<Login />}
+          />
         </Routes>
       </main>
 
