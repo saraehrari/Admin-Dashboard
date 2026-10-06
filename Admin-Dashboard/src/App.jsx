@@ -29,7 +29,7 @@ function App() {
       {/* ================= LOGIN ================= */}
       <Route
         path="/login"
-        element={<Login setIsAuth={setIsAuth} />}
+        element={<Login setIsAuth={setIsAuth} />} 
       />
 
       {/* ================= PROTECTED ROUTES ================= */}
